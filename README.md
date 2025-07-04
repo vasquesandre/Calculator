@@ -35,4 +35,4 @@ This app was developed to strengthen my skills in:
 
 ## Demo
 
-![Calculator Demo](Supporting%20Files/demo.gif)
+![Calculator Demo](demo.gif)
