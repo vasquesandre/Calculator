@@ -31,7 +31,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     private var calculator = CalculatorLogic()
@@ -56,6 +55,17 @@ class ViewController: UIViewController {
     @IBAction func numButtonPressed(_ sender: RoundButton) {
         
         if let numValue = sender.currentTitle {
+            
+            if numValue == "⌫" {
+                if !isFinishedTypingNumber, let currentText = displayLabel.text, !currentText.isEmpty {
+                    displayLabel.text = String(currentText.dropLast())
+                    if displayLabel.text?.isEmpty ?? true {
+                        displayLabel.text = "0"
+                        isFinishedTypingNumber = true
+                    }
+                }
+                return
+            }
             
             if isFinishedTypingNumber {
                 
@@ -82,4 +92,3 @@ class ViewController: UIViewController {
     }
     
 }
-
