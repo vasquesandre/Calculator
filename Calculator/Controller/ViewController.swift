@@ -19,7 +19,11 @@ class ViewController: UIViewController {
             return number
         }
         set {
-            displayLabel.text = String(newValue)
+            if newValue.truncatingRemainder(dividingBy: 1) == 0 {
+                displayLabel.text = String(Int(newValue))
+            } else {
+                displayLabel.text = String(newValue)
+            }
         }
     }
     
@@ -31,30 +35,33 @@ class ViewController: UIViewController {
     }
     
     private var calculator = CalculatorLogic()
-
+    
     
     @IBAction func calcButtonPressed(_ sender: UIButton) {
+        
         isFinishedTypingNumber = true
+        
+        calculator.setNumber(displayValue)
         
         if let calcMethod = sender.currentTitle {
             
-            calculator.setNumber(displayValue)
-            
-            guard let result = calculator.calculate(symbol: calcMethod) else {
-                fatalError("The result of the calculation is nil")
+            if let result = calculator.calculate(symbol: calcMethod) {
+                displayValue = result
             }
-            
-            displayValue = result
             
         }
         
     }
     
     @IBAction func numButtonPressed(_ sender: RoundButton) {
+        
         if let numValue = sender.currentTitle {
+            
             if isFinishedTypingNumber {
+                
                 displayLabel.text = numValue
                 isFinishedTypingNumber = false
+                
             } else {
                 
                 if numValue == "." {
@@ -64,11 +71,14 @@ class ViewController: UIViewController {
                     if !isInt {
                         return
                     }
+                    
                 }
                 
                 displayLabel.text = displayLabel.text! + numValue
             }
+            
         }
+        
     }
     
 }
