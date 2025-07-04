@@ -69,6 +69,7 @@
 				54EC39712E16EB7C00E82F53 /* Controller */,
 				54EC39722E16EBA800E82F53 /* Supporting Files */,
 				54EC395F2E16EB6200E82F53 /* Info.plist */,
+				54D7CE532E185F9400ACFEE5 /* demo.gif */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -103,7 +104,6 @@
 			children = (
 				54EC395E2E16EB6200E82F53 /* Assets.xcassets */,
 				54EC39612E16EB6200E82F53 /* LaunchScreen.storyboard */,
-				54D7CE532E185F9400ACFEE5 /* demo.gif */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
