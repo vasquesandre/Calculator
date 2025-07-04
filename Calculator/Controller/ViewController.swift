@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         
         if let numValue = sender.currentTitle {
             
-            if numValue == "⌫" {
+            if numValue == "<" {
                 if !isFinishedTypingNumber, let currentText = displayLabel.text, !currentText.isEmpty {
                     displayLabel.text = String(currentText.dropLast())
                     if displayLabel.text?.isEmpty ?? true {

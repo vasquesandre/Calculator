@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		549A4BE42E16FB1A008D82BB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549A4BE32E16FB1A008D82BB /* RoundButton.swift */; };
 		54D7CE522E1834DE00ACFEE5 /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7CE512E1834DE00ACFEE5 /* CalculatorLogic.swift */; };
+		54D7CE542E185F9400ACFEE5 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 54D7CE532E185F9400ACFEE5 /* demo.gif */; };
 		54EC39672E16EB6200E82F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54EC395E2E16EB6200E82F53 /* Assets.xcassets */; };
 		54EC39692E16EB6200E82F53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54EC39612E16EB6200E82F53 /* LaunchScreen.storyboard */; };
 		54EC396A2E16EB6200E82F53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54EC39632E16EB6200E82F53 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		549A4BE32E16FB1A008D82BB /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		54D7CE512E1834DE00ACFEE5 /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
+		54D7CE532E185F9400ACFEE5 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 		54EC39442E16EB3500E82F53 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54EC395D2E16EB6200E82F53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54EC395E2E16EB6200E82F53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				54EC395E2E16EB6200E82F53 /* Assets.xcassets */,
 				54EC39612E16EB6200E82F53 /* LaunchScreen.storyboard */,
+				54D7CE532E185F9400ACFEE5 /* demo.gif */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54EC39672E16EB6200E82F53 /* Assets.xcassets in Resources */,
+				54D7CE542E185F9400ACFEE5 /* demo.gif in Resources */,
 				54EC39692E16EB6200E82F53 /* LaunchScreen.storyboard in Resources */,
 				54EC396A2E16EB6200E82F53 /* Main.storyboard in Resources */,
 			);
