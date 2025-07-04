@@ -32,3 +32,7 @@ This app was developed to strengthen my skills in:
 - Using **`private` access control** to encapsulate logic and improve modularity
 - Creating **reusable and maintainable** functions
 - Handling **user interactions** and performing **real-time calculations**
+
+## Demo
+
+![Calculator Demo](Supporting%20Files/demo.gif)
